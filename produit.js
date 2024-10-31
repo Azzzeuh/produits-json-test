@@ -21,7 +21,7 @@ class Produit {
 
 
 async function chargerProduits() {
-    const url = "https://raw.githubusercontent.com/[ton-utilisateur]/produit-json-test/main/produits.json";
+    const url = "https://azzzeuh.github.io/produits-json-test/";
     try {
         const response = await fetch(url);
         const produitsData = await response.json();
