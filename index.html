@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice JSON</title>
-    <script src="produit.js" defer></script>
+    <title>Test Ajouter Produit</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tableau de Produits</h1>
-    <table id="produitsTable" border="1">
+
+    <h1>Ajouter un Produit</h1>
+    
+    <form id="produitForm">
+        <input type="text" id="nom" placeholder="Nom du produit" required>
+        <input type="number" id="prix" placeholder="Prix" required>
+        <input type="number" id="quantite" placeholder="Quantité" required>
+        <input type="file" id="preuve" accept="image/*">
+        <button type="submit">Ajouter Produit</button>
+    </form>
+
+    <h2>Liste des Produits</h2>
+    <table id="produitsTable">
         <thead>
             <tr>
                 <th>Nom</th>
                 <th>Prix</th>
                 <th>Quantité</th>
-                <th>Image</th>
+                <th>Preuve</th>
             </tr>
         </thead>
-        <tbody>
-            <!-- Contenu dynamique chargé par produit.js -->
+        <tbody id="produitsBody">
+            <!-- Les produits ajoutés seront insérés ici -->
         </tbody>
     </table>
+
+    <script src="produit.js"></script>
 </body>
 </html>
