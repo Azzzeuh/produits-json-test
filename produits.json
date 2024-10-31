@@ -1,0 +1,8 @@
+[
+    {
+        "nom": "Produit Exempe",
+        "prix": 25,
+        "quantite": 2,
+        "imageUrl": "image_produit1.jpg"
+    }
+]
